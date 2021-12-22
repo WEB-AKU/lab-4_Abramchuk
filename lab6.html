@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+    <script src="https://code.jquery.com/ui/1.13.0/jquery-ui.js"></script>
+    <style>
+        body {
+            background-image: url("img/17899.jpg");
+        }
+        .container {
+            display: flex;
+            justify-content: space-evenly;
+            align-items: center;
+            padding: 50px;
+        }
+    </style>
+    <script>
+
+        $( function() {
+            $( "input" ).checkboxradio();
+        } );
+
+        $( function() {
+            $( "#tabs" ).tabs({
+                event: "mouseover"
+            });
+        } );
+
+        $( function() {
+            $( "#datepicker" ).datepicker();
+        } );
+
+    </script>
+</head>
+<body>
+    <div class="container">
+        <div class="widget">
+            <h1>Checkbox and radio button widgets</h1>
+           
+            <fieldset>
+              <legend>Select a Location: </legend>
+              <label for="radio-1">New York</label>
+              <input type="radio" name="radio-1" id="radio-1">
+              <label for="radio-2">Paris</label>
+              <input type="radio" name="radio-1" id="radio-2">
+              <label for="radio-3">London</label>
+              <input type="radio" name="radio-1" id="radio-3">
+            </fieldset>
+           
+            <fieldset>
+              <legend>Hotel Ratings: </legend>
+              <label for="checkbox-1">2 Star</label>
+              <input type="checkbox" name="checkbox-1" id="checkbox-1">
+              <label for="checkbox-2">3 Star</label>
+              <input type="checkbox" name="checkbox-2" id="checkbox-2">
+              <label for="checkbox-3">4 Star</label>
+              <input type="checkbox" name="checkbox-3" id="checkbox-3">
+              <label for="checkbox-4">5 Star</label>
+              <input type="checkbox" name="checkbox-4" id="checkbox-4">
+            </fieldset>
+           
+            <fieldset>
+              <legend>Room Type: </legend>
+              <label for="checkbox-nested-1">Single
+                <input type="checkbox" name="checkbox-nested-1" id="checkbox-nested-1">
+              </label>
+              <label for="checkbox-nested-2">Double
+                <input type="checkbox" name="checkbox-nested-2" id="checkbox-nested-2">
+              </label>
+              <label for="checkbox-nested-3">Triple
+                <input type="checkbox" name="checkbox-nested-3" id="checkbox-nested-3">
+              </label>
+              <label for="checkbox-nested-4">Extra Bed
+                <input type="checkbox" name="checkbox-nested-4" id="checkbox-nested-4">
+              </label>
+            </fieldset>
+          </div>
+    
+    
+    
+          <div id="tabs">
+            <ul>
+              <li><a href="#tabs-1">first example</a></li>
+              <li><a href="#tabs-2">second example</a></li>
+              <li><a href="#tabs-3">third example</a></li>
+            </ul>
+            <div id="tabs-1">
+              <p>
+                  <img src="img/1v.jfif" alt="1variant" width="350px" />
+              </p>
+            </div>
+            <div id="tabs-2">
+              <p>
+                <img src="img/2v.jfif" alt="2variant"  width="350px"/>
+              </p>
+            </div>
+            <div id="tabs-3">
+              <p>
+                <img src="img/3v.jfif" alt="3variant" width="350px" />
+              </p>
+            </div>
+          </div>
+    
+    
+    
+          <div class="datepicker">
+              <p><b style="font-size: 30px;">Select a date of your stay</b></p>
+            <p>Date: <input type="text" id="datepicker"></p>
+          </div>
+           
+    </div>
+    
+</body>
+</html>
